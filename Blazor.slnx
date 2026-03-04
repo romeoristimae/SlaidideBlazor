@@ -5,9 +5,6 @@
     <Project Path="Code/Infra/Infra.csproj" />
     <Project Path="Code/Logic/Logic.csproj" />
     <Project Path="Code/Razor/Razor.csproj" />
-    <Project Path="Domain/Domain.csproj" Id="03d94467-fe63-43aa-be77-dcc15fdb1767" />
-    <Project Path="Jobs/Jobs.csproj" Id="188c997e-0364-4788-ac9c-9e55e3e51dd6" />
-    <Project Path="Shared/Shared.csproj" Id="bff79882-1537-4c46-bd1f-5a5e076b3200" />
   </Folder>
   <Folder Name="/Soft/" />
   <Folder Name="/Soft/Movies/">
