@@ -9,14 +9,14 @@ namespace Abc.Soft.Movie.Models
 
         [Required]
         [StringLength(60, MinimumLength = 3)]
-        public string? Title { get; set; }
+        public string Title { get; set; }
 
         public DateOnly ReleaseDate { get; set; }
 
         [Required]
         [StringLength(30)]
         [RegularExpression(@"^[A-Z]+[a-zA-Z()\s-]*$")]
-        public string? Genre { get; set; }
+        public string Genre { get; set; }
 
         [Range(0, 100)]
         [DataType(DataType.Currency)]
@@ -25,6 +25,6 @@ namespace Abc.Soft.Movie.Models
 
         [Required]
         [RegularExpression(@"^(G|PG|PG-13|R|NC-17)$")]
-        public string? Rating { get; set; }
+        public string Rating { get; set; }
     }
 }

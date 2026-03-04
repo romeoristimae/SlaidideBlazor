@@ -8,4 +8,8 @@
     <RootNamespace>Abc.Logic</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Infra\Infra.csproj" />
+  </ItemGroup>
+
 </Project>
