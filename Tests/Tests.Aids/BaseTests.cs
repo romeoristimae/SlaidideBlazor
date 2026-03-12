@@ -1,15 +1,9 @@
 ﻿using Abc.Aids;
 using System.Linq;
-using System.Reflection;
 
 namespace Abc.Tests.Aids;
 
-public abstract class BaseTests <TClass> where TClass : class, new(){
-     private TClass obj;
-    private const BindingFlags publicDeclared = BindingFlags.Public
-        | BindingFlags.DeclaredOnly
-        | BindingFlags.Instance
-        | BindingFlags.Static;
+public abstract class BaseTests<TClass>: TestAids<TClass> where TClass : class, new(){
      [TestInitialize] public void TestInitialize() => obj = new TClass();
      [TestMethod] public void CanCreateTest() => Assert.IsNotNull(obj);
      [TestMethod] public void IsClassCorrectTest(){
@@ -25,10 +19,4 @@ public abstract class BaseTests <TClass> where TClass : class, new(){
                 Assert.Inconclusive($"{m} is not tested");
         }
     }
-    private static IEnumerable<string> getProperties()
-        => global::Abc.Aids.GetType.PropertyNames<TClass>(publicDeclared);
-
-    private static IEnumerable<string> getMethods()
-        => global::Abc.Aids.GetType.MethodNames<TClass>(publicDeclared, false);
 }
-

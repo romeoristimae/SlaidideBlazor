@@ -3,8 +3,8 @@
     <Project Path="Code/Aids/Aids.csproj" />
     <Project Path="Code/Data/Data.csproj" />
     <Project Path="Code/Infra/Infra.csproj" />
-    <Project Path="Code/Logic/Logic.csproj" />
-    <Project Path="Code/Razor/Razor.csproj" />
+    <Project Path="Code/Logic/Jobs.csproj" />
+    <Project Path="Code/Razor/Shared.csproj" />
   </Folder>
   <Folder Name="/Soft/" />
   <Folder Name="/Soft/Movies/">
@@ -16,6 +16,7 @@
     <Project Path="Soft/Abc.Soft.ToDo/Abc.Soft.ToDo.Client/Abc.Soft.ToDo.Client.csproj" />
   </Folder>
   <Folder Name="/Tests/">
+    <Project Path="Tests/Abc.Tests.Data/Tests.Data.csproj" Id="03753ca8-806c-4148-a5ca-e3f99b8eb20c" />
     <Project Path="Tests/Tests.Aids/Tests.Aids.csproj" Id="3af3a007-8dad-48e1-8364-f8254fcf4a3a" />
   </Folder>
 </Solution>

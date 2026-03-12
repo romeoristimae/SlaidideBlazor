@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Abc.Soft.Movie.Models
+namespace Abc.Data
 {
     public class Currency
     {

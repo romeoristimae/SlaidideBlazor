@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Abc.Soft.Movie.Models
+namespace Abc.Data
 {
     public class Movie
     {

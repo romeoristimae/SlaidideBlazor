@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Abc.Soft.Movie.Models;
+using Abc.Data;
 
 namespace Abc.Soft.Movie.Data
 {
@@ -23,7 +23,7 @@ namespace Abc.Soft.Movie.Data
             }
 
             context.Movie.AddRange(
-                new Abc.Soft.Movie.Models.Movie
+                new Abc.Data.Movie
                 {
                     Title = "Mad Max",
                     ReleaseDate = new DateOnly(1979, 4, 12),
@@ -31,7 +31,7 @@ namespace Abc.Soft.Movie.Data
                     Price = 2.51M,
                     Rating = "R",
                 },
-                new Abc.Soft.Movie.Models.Movie
+                new Abc.Data.Movie
                 {
                     Title = "The Road Warrior",
                     ReleaseDate = new DateOnly(1981, 12, 24),
@@ -39,7 +39,7 @@ namespace Abc.Soft.Movie.Data
                     Price = 2.78M,
                     Rating = "R",
                 },
-                new Abc.Soft.Movie.Models.Movie
+                new Abc.Data.Movie
                 {
                     Title = "Mad Max: Beyond Thunderdome",
                     ReleaseDate = new DateOnly(1985, 7, 10),
@@ -47,7 +47,7 @@ namespace Abc.Soft.Movie.Data
                     Price = 3.55M,
                     Rating = "R",
                 },
-                new Abc.Soft.Movie.Models.Movie
+                new Abc.Data.Movie
                 {
                     Title = "Mad Max: Fury Road",
                     ReleaseDate = new DateOnly(2015, 5, 15),
@@ -55,7 +55,7 @@ namespace Abc.Soft.Movie.Data
                     Price = 8.43M,
                     Rating = "R",
                 },
-                new Abc.Soft.Movie.Models.Movie
+                new Abc.Data.Movie
                 {
                     Title = "Furiosa: A Mad Max Saga",
                     ReleaseDate = new DateOnly(2024, 5, 24),

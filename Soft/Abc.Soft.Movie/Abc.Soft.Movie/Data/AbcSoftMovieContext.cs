@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Abc.Soft.Movie.Models;
+using Abc.Data;
 
 namespace Abc.Soft.Movie.Data
 {
@@ -14,6 +14,6 @@ namespace Abc.Soft.Movie.Data
         {
         }
 
-        public DbSet<Abc.Soft.Movie.Models.Movie> Movie { get; set; } = default!;
+        public DbSet<Abc.Data.Movie> Movie { get; set; } = default!;
     }
 }

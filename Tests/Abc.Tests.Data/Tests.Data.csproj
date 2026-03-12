@@ -1,0 +1,30 @@
+﻿<Project Sdk="MSTest.Sdk/4.0.1">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<AssemblyName>Abc.Tests.Data</AssemblyName>
+		<RootNamespace>Abc.Tests.Data</RootNamespace>
+		<UseVSTest>true</UseVSTest>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Tests.Aids\Tests.Aids.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="Microsoft.NET.Test.Sdk" Version="18.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="MSTest.TestAdapter" Version="4.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Update="MSTest.TestFramework" Version="4.1.0" />
+	</ItemGroup>
+
+</Project>
+
